@@ -6,14 +6,6 @@ package org.example
 import dev.langchain4j.model.chat.ChatLanguageModel
 import dev.langchain4j.model.ollama.OllamaChatModel
 
-
-class App {
-    val greeting: String
-        get() {
-            return "Hello World!"
-        }
-}
-
 fun main() {
     val chatModel: ChatLanguageModel = OllamaChatModel.builder()
         .baseUrl("http://192.168.1.248:11434")
